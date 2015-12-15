@@ -1,0 +1,6 @@
+WARNING! Tricky Jump: byte number: 852
+6890909090c3
+
+WARNING! Tricky Jump: byte number: 1076
+683c840408c3
+

